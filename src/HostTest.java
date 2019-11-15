@@ -67,6 +67,9 @@ public class HostTest {
 	 	for(int i=1;i<=254;i++)
 		{
 	 		String remoteIp=netaddr+i; 
+			/*
+			 * if(remoteIp.equals(ip)) continue;
+			 */
 	 		Runnable obj= new HostTest().new CheckCurrentIPStatus(fileName, remoteIp); 
 	 		exec.execute(obj);
 

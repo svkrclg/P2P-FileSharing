@@ -67,6 +67,8 @@ public void start()
     		eligiblePeersIp.add(getIp(s+""));
     	}
     }
+    //Create threads to connect to eligible ip's with required details regarding part of data needed
+    //Dividing requiredSize equally among eligibleIp
     
 }
 public String getIp(String s)
