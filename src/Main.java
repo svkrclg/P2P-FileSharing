@@ -9,6 +9,7 @@ public class Main {
 	//Constructor for server
 	public Main(int port) {
 		super();
+		this.port = port;
 		try {
 			this.serverSocket = new ServerSocket(port);
 			this.serverSocket.setReuseAddress(true);   //immediate close of socket on program termination
@@ -17,7 +18,6 @@ public class Main {
 			e.printStackTrace();
 		}
 		
-		this.port = port;
 	}
    
 	public static void main(String[] args) {
